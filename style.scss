@@ -1,0 +1,529 @@
+/*-----------------------10CIPRIAN WEB-DEV © --------------- */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color:#5CDB95;
+ 
+}
+body{
+    font-family:"Helvetica", 'Arial' , sans-serif;
+}
+/*-----------------------NAVBAR --------------- */
+header a{
+    text-decoration:none;
+    color:#05386B;
+    font-size: 20px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top:10px;
+    height: 50px;
+    text-transform: uppercase;
+    
+}
+.items{
+    margin-left:auto;
+    margin-top:5px;
+    display:flex;
+ 
+}
+.item{
+    padding: 0px 20px 0 20px;
+    transition:all ease-in-out .5s;
+    
+}
+.logo{
+    font-weight: 950;
+    margin-left:10px;
+    
+}
+.sub-items{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    width: 170px;
+    margin-top:5px;
+    margin-right: 5px;
+}
+.subitem{
+    display:none;
+    
+    padding: 20px 0 20px 0;
+    
+}
+.hamburger{
+    display:none;
+    margin-right:10px;
+    color:#05386B;
+    font-size:25px;
+    padding: 2px 5px 2px 5px;
+    height:32px;
+    border-radius:20%;
+}
+
+.active{
+    display:block;
+}
+
+.subitem:hover{
+    color:white;
+}
+.item:hover{
+    color:white;
+}
+
+/*-----------------------NAVBAR--------------- */
+
+/*-----------------------MEDIA QUERIES--------------- */
+@media screen and (max-width:820px){
+    header{
+        flex-direction:row;
+        width:100%;
+    }
+    .dezactive{
+        display:none;
+    }
+    .hamburger{
+        display:block;
+        margin-left:auto;
+        position:static;
+        order:1;
+    }
+    .item{
+        padding: 20px 0 20px 0;
+    }
+    .items{
+        padding: 0 0 20px 0;
+        display:none;
+        flex-direction:column;
+        order:2;
+        
+    }
+    .sub-items{
+        display:none;
+        order:3;
+        width:100%;
+        text-align:center;
+        background-color:#5CDB95;
+    }
+    .item:hover{
+        color:white;
+    }
+    .active{
+        display:block;
+    }
+    .column{
+        flex-direction:column;
+    }
+    .flex{
+        display:flex;
+        width:100%;
+        text-align:center;
+    }
+    .all-center{
+        height:100%;
+    }
+    
+     
+
+}
+
+/*-----------------------MEDIA QUERIES --------------- */
+
+/*-----------------------MAIN SECTION  --------------- */
+
+main{
+    margin-top:100px;
+    
+}
+
+/*-----------------------Presentation--------------- */
+.present-why{
+    color:white;
+    text-shadow:
+    -2px -2px 0 #05386B,  
+    2px -2px 0 #05386B,
+    -2px 2px 0 #05386B,
+    2px 2px 0 #05386B;
+    font-size:60px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.present-text{
+    width:500px;
+    
+}
+.present-container{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    
+}
+
+.img2{
+    border-radius:10%;
+    
+    width:600px;
+    margin-left:150px;
+}
+.present-choose{
+    color:white;
+    font-weight:800;
+    font-size:50px;
+
+}
+.present-choose2{
+    color:white;
+    font-size:25px;
+    margin-top:-5px;
+    font-weight:600;
+    margin-bottom: 30px;
+   
+}
+.healthy-help{
+    color:white;
+    font-size: 20px;
+    font-weight:600;
+
+}
+
+.present-products{
+    text-decoration:none;
+    color:white;
+    font-weight: 600;
+    background-color:#05386B;
+    padding: 12px 16px 12px 16px;
+    transition: all ease-out .4s;
+}
+.present-products:hover{
+    background-color:#379683;
+    color:#05386B;
+}
+.button-our{
+    margin-top: 20px;
+}
+
+.clients{
+    display:none;
+}
+
+/*------------------PRODUCT INFO-----------------*/
+.product{
+    margin-top:100px;
+    display:flex;
+    justify-content: center; 
+    width: 100%;
+    align-items:center;
+    .product-butoi{ 
+        width: 500px;
+        padding: 50px 0 0 50px;
+    }
+   
+}
+.product-informatii{
+    margin-left:150px;
+    color:white;
+    width: 600px;
+    h1{
+        font-size:50px;
+        font-weight:900;
+        
+    }
+    h2{
+        margin-top:-5px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .product-text{
+        margin-top:40px;
+        font-size:20px;
+        font-weight:600;
+    }
+    
+}
+
+.product-button{
+    
+    text-decoration:none;
+    color:white;
+    font-weight: 600;
+    text-align:center;
+    background-color:rgb(32, 192, 32);
+    padding: 12px 60px 12px 60px;
+    transition: all ease-out .4s;
+}
+.product-button:hover{
+    background-color:#379683;
+    color:#05386B;
+}
+
+.product-buy{
+    margin-top:25px;
+}
+
+
+/*--------------ABOUT HEALTHY LIFE------------------*/
+
+.about{
+    margin-top: 100px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    .about-heading1{
+          font-size:50px;
+          color:white;
+          font-weight: 900;
+          text-shadow:
+          -1px -1px 0 #05386B,  
+          1px -1px 0 #05386B,
+          -1px 1px 0 #05386B,
+          1px 1px 0 #05386B;
+    }
+}
+.our-team{
+    color:white;
+    display:flex;
+    flex-direction:row;
+    margin-top:50px;  
+    .member-team{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        background-color: #05386B;
+        border: 2px solid white;
+        height: 400px;
+        width: 300px;
+        .eu{
+            border:2px solid white;
+            border-radius:50%;
+            margin-top:20px;
+            width: 200px;
+            height: 200px;
+            transition:all ease-in-out .5s;
+        }
+        .eu:hover{
+            transform:rotateY(180deg);
+        }
+
+       
+        
+    }
+    .member-team:nth-child(2){
+        margin-left:180px;
+    }
+    .member-team:nth-child(3){
+        margin-left:180px;
+    }
+  
+   
+}
+
+.member-container{
+    h1{
+        margin-top:20px;
+        text-align:center;
+    }
+}
+.member-container-text{
+    margin-left:50px;
+    margin-top:15px;
+    width:80%;
+    font-size:17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.our-team-heading{
+    color:white;
+    margin-top:25px;
+} 
+
+
+/* ---------FOOTER-------------*/
+footer{
+    display:flex;
+    flex-direction:column;
+    margin-top:100px;
+    height: 250px;
+    width:100%;
+    background-color:#05386B;
+    align-items:center;
+    justify-content: center;
+    i:nth-last-child(1){
+        border-radius:50%;
+        padding-top:6px;
+        margin-top:10px;
+        text-align:center;
+        height:30px;
+        margin-right:5px;
+        width:30px;
+        background-color:#379683;
+        transition: all ease-in-out .5s;
+    }
+    i:nth-last-child(1):hover{
+        background-color:red;
+    }
+    .footer-row{
+        margin-top:50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row;
+        color:white;
+        .footer-informatii:nth-last-child(1){
+            margin-left:100px;
+        }
+    }
+    .footer-social{
+        margin-top:40px;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        margin-bottom:15px;
+        h3{
+            color:white;
+        }
+        h3:nth-child(2){
+            margin-left:10px;
+        }
+        h3:nth-child(3){
+            margin-left:10px;
+        }
+     
+    }
+
+
+    .copyright{
+        font-weight: 600;
+        margin-top:auto;
+        color:white;
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            color:red;
+        }
+    }
+}
+
+
+@media screen and (max-width:1170px){
+
+    .img2{
+        width:370px;
+        margin-left:50px;
+    }
+    .img-butoi{
+       height:350px;
+    }
+    .product-informatii{
+        margin-left:100px;
+    }
+    .our-team{
+        justify-content: center;
+    
+    
+    .member-team:nth-child(2){
+            margin-left:5px;
+            
+    }
+    .member-team:nth-child(3){
+            margin-left:5px;
+    }
+    }
+ 
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        height:300px;
+      
+        .footer-row{
+            flex-direction: column;
+            .footer-informatii:nth-last-child(1){
+                margin-left:-130px;
+            }
+        }
+        .copyright{
+            margin-bottom:25px;
+        }
+
+    }
+  
+    .about{
+        .about-heading1{
+            font-size:40px;
+            text-align:center;
+        }
+    }
+    .our-team{
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        .member-team:nth-child(2){
+            margin-left:0px;
+            margin-top:30px;
+        }
+        .member-team:nth-child(3){
+            margin-left:0px;
+            margin-top:30px;
+        }
+    }
+    .product{
+        flex-direction:column;
+        align-items:center;
+        .product-butoi{
+           
+            text-align:center;
+            padding: 0 0 0 0;
+        }
+        .img-butoi{
+            height:300px;
+        }
+    }
+    .product-informatii{
+        width:90%;
+        margin-left:5px;
+        h1{
+            font-size:40px;
+        }
+        
+    }
+    
+    
+    .present-why{
+        display:block;
+        text-align:center;
+        font-size: 45px;
+    }
+    .present-choose{
+        font-size:40px;
+    }
+    .present-text{
+        width:90%;
+    }
+    .img2{
+        display:none;
+    }
+    .present-container{
+        align-items:center;
+    }
+    
+   
+}
+
+
+
+
+/*-----------------------MAIN SECTION--------------- */
