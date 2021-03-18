@@ -175,7 +175,10 @@ main {
 /*-----------------------Presentation--------------- */
 .present-why {
   color: white;
-  text-shadow: -2px -2px 0 #05386B,   2px -2px 0 #05386B, -2px 2px 0 #05386B, 2px 2px 0 #05386B;
+  text-shadow: -2px -2px 0 #05386B,  
+ 2px -2px 0 #05386B,
+ -2px 2px 0 #05386B,
+ 2px 2px 0 #05386B;
   font-size: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,7 +340,10 @@ main {
   font-size: 50px;
   color: white;
   font-weight: 900;
-  text-shadow: -1px -1px 0 #05386B,   1px -1px 0 #05386B, -1px 1px 0 #05386B, 1px 1px 0 #05386B;
+  text-shadow: -1px -1px 0 #05386B,  
+ 1px -1px 0 #05386B,
+ -1px 1px 0 #05386B,
+ 1px 1px 0 #05386B;
 }
 
 .our-team {
@@ -501,9 +507,10 @@ footer .footer-social h3:nth-child(3) {
   margin-left: 10px;
 }
 
-footer .copyright {
+.copyright {
   font-weight: 600;
-  margin-top: auto;
+  width:100%;
+  text-align:center;
   color: white;
 }
 
